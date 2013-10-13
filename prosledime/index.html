@@ -19,6 +19,15 @@
         <script src="scripts/app.js"></script>
     </head>
     <body>
+        
+            
+            <div class="result-area ch100">
+                <div class="results">
+                    <div id="result" class="desc"></div>
+                </div>
+				<div class="separator"></div>
+			</div>
+        
         <div id="home-view" data-id="home-view" data-role="view"
              data-layout="main-layout" data-title="Начало">
             <img id="home-logo" style="width:300px;padding-left:10px;" src="img/prosledime.png"/>
@@ -32,14 +41,17 @@
                     <span data-role="view-title"></span>
                 </div>
             </header>
+            
             <footer data-role="footer">
                 <div data-role="tabstrip">
-                    <a href="#home-view" data-icon="home">Начало</a>
-                    <a href="views/banknotes-view.html#banknotes-view" data-icon="bookmarks">Банкнота</a>
-                    <a href="views/more-view.html#more-view" data-icon="info">Още</a>
+                    <a href="#home-view" id="vibrateButton" data-icon="home">Начало</a>
+                    <a href="views/banknotes-view.html#banknotes-view" id="vibrateButton" data-icon="bookmarks">Банкнота</a>
+                    <a href="views/more-view.html#more-view" id="vibrateButton" data-icon="info">Още</a>
                 </div>
             </footer>
         </div>
+        
+        
 
 
         

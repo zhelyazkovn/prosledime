@@ -13,7 +13,7 @@ var app = app || {};
         httpRequest.getJSON("http://localhost:8875/api/banknotes")
         //httpRequest.getJSON( app.servicesBaseUrl + "categories")
         .then(function (banknotes) {
-            viewModel.set("banknotes", banknotes);            
+            viewModel.set("banknotes", banknotes);
         });        
     }
     
@@ -28,6 +28,7 @@ var app = app || {};
                 dataSource: banknotes,
                 template: $("#banknote-list-template").html()
             });
+            
         });
     }
     
@@ -42,6 +43,7 @@ var app = app || {};
                 dataSource: banknotes,
                 template: $("#banknote-list-template").html()
             });
+            
         });
     }
     
